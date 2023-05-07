@@ -15,15 +15,10 @@ import 'package:get/get.dart';
 class HomePage extends StatefulWidget {
   @override
 
-  State<HomePage> createState() => HomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
-
-class HomePageState extends State<HomePage> {
-  State<homePage> createState() => _homePageState();
-}
-
-class _homePageState extends State<homePage> {
-  User currentUser = User(
+class _HomePageState extends State<HomePage> {
+    User currentUser = User(
     id: '1',
     imgurl: "https://randomuser.me/api/portraits/men/1.jpg",
     name: 'John Doe',
@@ -101,7 +96,7 @@ class _homePageState extends State<homePage> {
               context, MaterialPageRoute(builder: (context) => const ChatScreen()));
         },
         backgroundColor: Colors.green,
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add),),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

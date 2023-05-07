@@ -1,6 +1,4 @@
 import 'package:get/get.dart';
-import '../model/user.dart';
-
 class UserController extends GetxController {
   RxString text = "".obs;
   String name = "John De";
